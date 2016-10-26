@@ -11,7 +11,7 @@ const App = React.createClass({
 
   updateTime() {
     this.setState({
-      now: new Date()//.toLocaleTimeString()
+      now: new Date() //.toLocaleTimeString()
     });
   },
 
@@ -38,7 +38,6 @@ const App = React.createClass({
       </div>
     );
   }
-
 });
 
 export default App;

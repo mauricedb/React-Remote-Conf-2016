@@ -24,7 +24,8 @@ class App extends Component {
     //   .executeForPromise(() =>
     //     fetch('api/time')
     //       .then(rsp => {
-    //         if (rsp.status < 400) {
+    //         console.log(rsp)
+    //         if (rsp.ok) {
     //             return rsp;
     //         } else {
     //           return Promise.reject(rsp);
@@ -34,7 +35,7 @@ class App extends Component {
 
     fetch('api/time')
       .then(rsp => {
-        if (rsp.status < 400) {
+        if (rsp.ok) {
             return rsp;
         } else {
           return Promise.reject(rsp);

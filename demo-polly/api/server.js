@@ -7,6 +7,7 @@ var app = http.createServer(function (request, response) {
     if (counter % 3 === 0) {
         response.writeHead(500);
         response.end();
+        
     } else {
         response.writeHead(200, {
             'Content-Type': 'application/json'
